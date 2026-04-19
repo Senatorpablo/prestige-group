@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+status/
+agent_handoffs.json
+agent_log.json
+leads/
+cloned_sites/
+outreach/
+output/
+.DS_Store
+*.egg-info/
