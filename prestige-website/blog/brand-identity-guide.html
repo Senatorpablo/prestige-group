@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the step-by-step framework to build a brand identity that differentiates your business from competitors. Covers purpose, audience, voice, logo, color, typography, visual language, guidelines, consistency, and evolution.">
+  <meta name="keywords" content="brand identity, branding guide, brand strategy, logo design, brand guidelines, visual identity, brand voice, Prestige Group">
+  <meta name="author" content="Prestige Group">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="How to Build a Brand Identity That Sets You Apart From Competitors">
+  <meta property="og:description" content="Discover the framework we use to create memorable brand identities that make businesses the obvious choice.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://senatorpablo.github.io/prestige-group/blog/brand-identity-guide.html">
+  <meta property="og:image" content="https://senatorpablo.github.io/prestige-group/assets/blog-3.svg">
+  <meta property="article:published_time" content="2025-03-12">
+  <meta property="article:section" content="Branding">
+  <meta property="article:author" content="Prestige Group">
+
+  <title>How to Build a Brand Identity That Sets You Apart From Competitors | Prestige Group Blog</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.svg">
+
+  <!-- JSON-LD: BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://senatorpablo.github.io/prestige-group/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://senatorpablo.github.io/prestige-group/blog.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to Build a Brand Identity That Sets You Apart From Competitors",
+        "item": "https://senatorpablo.github.io/prestige-group/blog/brand-identity-guide.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Build a Brand Identity That Sets You Apart From Competitors",
+    "description": "Learn the step-by-step framework to build a brand identity that differentiates your business from competitors. Covers purpose, audience, voice, logo, color, typography, visual language, guidelines, consistency, and evolution.",
+    "image": "https://senatorpablo.github.io/prestige-group/assets/blog-3.svg",
+    "datePublished": "2025-03-12",
+    "dateModified": "2025-03-12",
+    "author": {
+      "@type": "Organization",
+      "name": "Prestige Group",
+      "url": "https://senatorpablo.github.io/prestige-group/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Prestige Group",
+      "url": "https://senatorpablo.github.io/prestige-group/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://senatorpablo.github.io/prestige-group/assets/favicon.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://senatorpablo.github.io/prestige-group/blog/brand-identity-guide.html"
+    },
+    "articleSection": "Branding",
+    "wordCount": 2800
+  }
+  </script>
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    /* Blog Article — Page-specific styles */
+    .article-hero {
+      position: relative;
+      padding: 160px 0 60px;
+      background: linear-gradient(135deg, var(--navy) 0%, #162040 50%, #1a2750 100%);
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .article-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(212, 168, 83, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .article-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    .article-hero-image {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 32px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+    }
+    .article-hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .article-hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .article-category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      background: rgba(212, 168, 83, 0.15);
+      border: 1px solid rgba(212, 168, 83, 0.3);
+      padding: 6px 16px;
+      border-radius: 100px;
+    }
+    .article-hero-meta .meta-divider {
+      color: rgba(255,255,255,0.3);
+      font-size: 0.8rem;
+    }
+    .article-hero-meta .meta-text {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      font-weight: 500;
+    }
+    .article-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      max-width: 800px;
+    }
+    .article-hero .article-author {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+      font-weight: 500;
+    }
+    .article-hero .article-author strong {
+      color: var(--white);
+    }
+
+    /* Article Body */
+    .article-body-section {
+      padding: 80px 0 100px;
+      background: var(--gray);
+    }
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 60px;
+      align-items: start;
+    }
+    .article-content {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 48px 56px;
+      border: 1px solid #e2e8f0;
+      max-width: 100%;
+    }
+    .article-content h2 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      scroll-margin-top: 100px;
+    }
+    .article-content h2:first-child {
+      margin-top: 0;
+    }
+    .article-content h2 .section-number {
+      color: var(--blue);
+      font-weight: 800;
+      margin-right: 8px;
+    }
+    .article-content p {
+      font-size: 1.05rem;
+      color: var(--gray-dark);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .article-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Sidebar */
+    .article-sidebar {
+      position: sticky;
+      top: 100px;
+    }
+    .sidebar-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 24px;
+    }
+    .sidebar-card h3 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      margin-bottom: 16px;
+    }
+    .sidebar-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar-card ul li {
+      margin-bottom: 10px;
+    }
+    .sidebar-card ul li:last-child {
+      margin-bottom: 0;
+    }
+    .sidebar-card ul li a {
+      font-size: 0.88rem;
+      color: var(--gray-dark);
+      text-decoration: none;
+      line-height: 1.5;
+      display: block;
+      padding: 6px 0;
+      border-bottom: 1px solid #f1f5f9;
+      transition: color 0.2s, padding-left 0.2s;
+    }
+    .sidebar-card ul li a:hover {
+      color: var(--blue);
+      padding-left: 6px;
+    }
+    .sidebar-card ul li a .num {
+      color: var(--blue);
+      font-weight: 700;
+      margin-right: 6px;
+    }
+
+    /* CTA Banner inside article */
+    .article-cta-banner {
+      margin-top: 56px;
+      padding: 40px;
+      background: linear-gradient(135deg, var(--navy) 0%, #162040 100%);
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+    .article-cta-banner h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .article-cta-banner p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 1024px) {
+      .article-layout {
+        grid-template-columns: 1fr;
+      }
+      .article-sidebar {
+        position: static;
+        order: -1;
+      }
+      .article-content {
+        padding: 36px 28px;
+      }
+    }
+    @media (max-width: 768px) {
+      .article-hero {
+        padding: 130px 0 40px;
+      }
+      .article-content {
+        padding: 28px 20px;
+      }
+      .article-content h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar navbar--scrolled" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="8" fill="url(#logoGrad)"/>
+          <path d="M10 12L18 8L26 12V24L18 28L10 24V12Z" stroke="#fff" stroke-width="1.5" fill="none"/>
+          <path d="M18 8V28M10 12L26 24M26 12L10 24" stroke="#D4A853" stroke-width="1.5"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36">
+              <stop stop-color="#2563EB"/>
+              <stop offset="1" stop-color="#0F1629"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        Prestige<span class="logo-gold"> Group</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html#features" class="nav-link">Services</a></li>
+        <li><a href="../index.html#solutions" class="nav-link">Solutions</a></li>
+        <li><a href="../index.html#how-it-works" class="nav-link">Process</a></li>
+        <li><a href="../index.html#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="../blog.html" class="nav-link nav-link--active">Resources</a></li>
+        <li><a href="../index.html#contact" class="nav-link nav-cta">Get Started</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       ARTICLE HERO
+       ============================================================ -->
+  <section class="article-hero">
+    <div class="container">
+      <div class="article-hero-image fade-in">
+        <img src="../assets/blog-3.svg" alt="Branding and logo design process with color swatches and typography samples" loading="eager">
+      </div>
+      <div class="article-hero-meta fade-in">
+        <span class="article-category-tag">Branding</span>
+        <span class="meta-divider">•</span>
+        <span class="meta-text">March 12, 2025</span>
+        <span class="meta-divider">•</span>
+        <span class="meta-text">9 min read</span>
+      </div>
+      <h1 class="slide-up">How to Build a Brand Identity That Sets You Apart From Competitors</h1>
+      <p class="article-author slide-up stagger-1">By <strong>Prestige Group</strong></p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ARTICLE BODY + SIDEBAR
+       ============================================================ -->
+  <section class="article-body-section">
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- Main Article Content -->
+        <article class="article-content">
+
+          <h2 id="section-1"><span class="section-number">01</span> Define Your Brand's Core Purpose &amp; Values</h2>
+          <p>Every brand that endures starts with a clear answer to one question: why do you exist beyond making money? Your core purpose is the beating heart of your brand identity — it shapes every design decision, every message, and every experience you create. Without it, you're just another company selling something. Start by writing a purpose statement that captures the impact you want to have on your customers' lives. Make it aspirational but honest. A fitness brand's purpose isn't "sell supplements" — it's "help people unlock their physical potential." That distinction changes everything downstream.</p>
+          <p>Next, articulate three to five core values that guide how your business behaves. Values aren't buzzwords printed on a wall — they are decision-making filters. When Patagonia says "We're in business to save our home planet," that value determines which materials they use, which campaigns they run, and which partnerships they accept. Your values should create the same kind of clarity. Choose values that are specific enough to eliminate options, not so vague that anything fits. "Innovation" means little. "Rapid experimentation over perfection" gives your team a real compass.</p>
+          <p>Audit your current brand materials against your purpose and values. Do your website, social media, and customer communications reflect what you say you stand for? If there's a gap, that's your first priority. Consistency between what you claim and what you deliver is the foundation of trust — and trust is the foundation of every strong brand.</p>
+
+          <h2 id="section-2"><span class="section-number">02</span> Know Your Audience Better Than They Know Themselves</h2>
+          <p>Great brands don't target demographics — they understand psychographics. Knowing your audience is 35-year-old married women with household incomes over $80K is helpful for media buying. But knowing they feel guilty about not spending enough quality time with their kids, and they'd pay a premium for anything that makes that time more meaningful? That's the insight that transforms a generic brand into a beloved one. Build audience profiles around motivations, frustrations, aspirations, and the language your customers actually use when describing their problems.</p>
+          <p>Conduct real research, not assumptions. Interview ten to fifteen existing customers and ask open-ended questions: What was going on in your life when you found us? What almost stopped you from buying? What surprised you after you bought? The patterns in these conversations reveal positioning gold. Complement qualitative interviews with quantitative data — survey your email list, analyze customer support tickets, and study the online communities where your audience congregates. The goal is to understand their world so deeply that when they encounter your brand, it feels like you're reading their mind.</p>
+
+          <h2 id="section-3"><span class="section-number">03</span> Craft a Brand Voice That's Unmistakably You</h2>
+          <p>Your brand voice is how your brand sounds when it speaks. It's the difference between reading a legal disclaimer and reading a letter from a friend — same words, completely different experience. To craft an unmistakable voice, start by defining three voice attributes that capture your brand's personality. Mailchimp chose "fun but not childish, clever but not snarky, informal but not sloppy." Those three constraints give their writers everything they need to sound consistent across tweets, emails, and error messages. Choose attributes that are authentic to your team, not aspirational personas you'll abandon in six months.</p>
+          <p>Once you have your attributes, create a voice chart that maps each attribute to specific dos and don'ts with before-and-after examples. "Conversational" might mean "use contractions and direct address" on the do side, and "avoid jargon and passive voice" on the don't side. The more concrete your examples, the easier it is for anyone — from your CMO to a freelance copywriter — to write in your brand voice without constant revision cycles. Test your voice by writing the same message three different ways and seeing which version your audience responds to. Data beats intuition every time.</p>
+          <p>Finally, document how your voice flexes across channels. Your LinkedIn posts will naturally be more formal than your TikTok captions, but they should still sound like the same brand. Define your "home base" voice — the one that shows up on your website and emails — then describe how it adjusts up or down for each platform without losing its core character.</p>
+
+          <h2 id="section-4"><span class="section-number">04</span> Design a Logo That Tells Your Story</h2>
+          <p>Your logo is the single most recognized element of your visual identity, but its job is not to explain everything about your business. It's to be distinctive, memorable, and scalable. The best logos are simple enough to be recognized at 16 pixels on a browser tab and clear enough to work on a billboard. Start your design process by writing a creative brief that connects the logo to your purpose and audience — not a list of things you want to see. "We want a shield and a swoosh" produces a generic logo. "We help people feel protected and forward-moving" produces something original and meaningful.</p>
+          <p>Work through multiple concepts before committing. Sketch at least twenty to thirty rough ideas before refining any of them. Most designers fall in love with concept number three and stop exploring. The breakthrough often shows up around concept fifteen. When you narrow down, test your finalists across different contexts: dark backgrounds, light backgrounds, tiny sizes, monochrome, next to competitor logos. A logo that only works on a white background is a logo that will cause problems for years.</p>
+
+          <h2 id="section-5"><span class="section-number">05</span> Build a Color System With Meaning</h2>
+          <p>Color is the fastest path to brand recognition — research shows that color alone can increase brand recognition by up to 80%. But choosing colors based solely on personal preference is a missed opportunity. Start by understanding the emotional associations of different hues in your industry context. Blue signals trust and stability, which explains its dominance in finance and technology. Red signals energy and urgency, which drives its use in food and clearance retail. Choose a primary color that aligns with the feeling you want your audience to have, not just the one you like wearing.</p>
+          <p>Build a complete system, not a pair of colors. You need a primary brand color, one or two supporting colors, neutral shades for backgrounds and text, and accent colors for calls-to-action and highlights. Define every color as a specific hex code with approved tints and shades — "lighter blue" is not a brand color, but "Primary Blue #2563EB at 10% opacity" is. Your color system should also specify background and text pairings that meet WCAG accessibility standards. A beautiful palette that fails contrast checks will hurt both your users and your search rankings.</p>
+
+          <h2 id="section-6"><span class="section-number">06</span> Choose Typography That Speaks Volumes</h2>
+          <p>Typography is the quiet workhorse of brand identity. It carries more information about your brand's personality than most people consciously realize — a geometric sans-serif says "modern and precise" while a humanist serif says "warm and established." Choose a primary typeface for headings that embodies your brand personality, and pair it with a secondary typeface for body text that prioritizes readability. Two typefaces maximum. Three if you have a strong justification. More than that creates visual chaos that dilutes recognition.</p>
+          <p>Define your type system as precisely as your color system. Set specific weights for each usage (600 for headings, 400 for body, 500 for labels), establish a modular type scale for sizing (e.g., 1rem, 1.25rem, 1.563rem, 1.953rem, 2.441rem), and document line-height and letter-spacing values for each level. These decisions determine whether your content feels cramped and stressful or spacious and confident. When in doubt, err on the side of more line-height and more line-length breathing room — your readers' eyes will thank you, and your brand will feel more premium for it.</p>
+          <p>Always verify that your chosen fonts load quickly and render well across operating systems and browsers. A brand identity that only looks right on macOS Chrome isn't much of an identity. Test on Windows, Android, and Safari before committing. Consider setting fallback stacks that preserve your hierarchy even when web fonts fail to load.</p>
+
+          <h2 id="section-7"><span class="section-number">07</span> Create a Visual Language Beyond the Logo</h2>
+          <p>A brand is more than a logo — it's a complete visual language that includes photography style, illustration approach, icon system, pattern library, spatial relationships, and motion principles. These elements work together to create an experience that feels like you before anyone reads a word of copy. Apple's product photography, with its extreme close-ups on white backgrounds, is as recognizable as the Apple logo itself. Define your photography direction (lifestyle vs. product, warm vs. cool lighting, close-up vs. environmental), your illustration style (flat vs. dimensional, line vs. filled, geometric vs. organic), and your icon approach (outlined vs. filled, rounded vs. sharp corners, consistent stroke weight).</p>
+          <p>Create a pattern or texture system that adds visual interest without competing with content. Subtle geometric patterns, grain overlays, or signature shapes used as decorative elements give your materials an identifiable fingerprint. Even the way you use whitespace — generous and airy, or tight and editorial — becomes part of your visual DNA. Document all of these decisions with examples, not just descriptions. A single moodboard reference is worth a paragraph of explanation. The goal is for someone to look at any piece of your brand and instantly know it's yours, even with the logo removed.</p>
+
+          <h2 id="section-8"><span class="section-number">08</span> Document Everything in Brand Guidelines</h2>
+          <p>If your brand identity only lives in your designer's head, it doesn't exist. Brand guidelines are the document that transforms good intentions into consistent execution. A proper brand book covers your purpose and values, voice and tone, logo usage rules (including minimum sizes, clear space, and unacceptable modifications), color specifications with hex, RGB, CMYK, and Pantone values, typography system with usage rules, photography and illustration direction, icon and pattern libraries, and layout principles. Think of it as the operating manual for your brand — anyone should be able to pick it up and produce on-brand work without asking a single question.</p>
+          <p>Make your guidelines practical, not aspirational. Include real examples of correct and incorrect usage. Show a before-and-after of an email that was rewritten to match the brand voice. Include a checklist for social media posts. Provide templates for common deliverables like presentation decks or proposal documents. The more turnkey you make the guidelines, the more likely your team and partners are to actually follow them. And make the document accessible — a searchable web page beats a 60-page PDF that nobody can find on the shared drive.</p>
+          <p>Review and update your guidelines quarterly, especially in the first year after launching a new identity. Questions your team asks repeatedly reveal gaps in the documentation. If three people ask the same question, the answer needs to be in the guidelines. A living document that evolves with your team's needs is infinitely more valuable than a perfect document that nobody references.</p>
+
+          <h2 id="section-9"><span class="section-number">09</span> Apply Consistently Across All Touchpoints</h2>
+          <p>Consistency is what turns a collection of design assets into a brand identity. Your audience might encounter you first through a Google ad, then a blog post, then an email, then a sales call, then your product itself. If the visual and verbal experience shifts at every step, the accumulated recognition you've built at each touchpoint is lost. Map every customer touchpoint — from the first search result to the post-purchase email — and audit each one against your brand guidelines. You'll almost always find orphaned touchpoints: a LinkedIn banner from three rebrands ago, an email footer with the old font, a tradeshow booth that was "close enough" when it was printed.</p>
+          <p>Create a brand consistency checklist for each type of asset your team produces. For social media posts, it might include: correct profile photo and banner, voice alignment, approved color palette in graphics, proper logo usage, and correct hashtag set. For sales decks, it might include: template compliance, approved imagery, correct typography hierarchy, and on-brand data visualization style. These checklists take five minutes to run and save hours of rework. They also make it easy to onboard new team members and freelancers who need to produce on-brand work from day one.</p>
+          <p>Assign brand ownership to a real person — not a committee. Someone needs the authority and responsibility to say "this isn't on brand" and have it stick. Without a brand guardian, consistency drifts through a thousand tiny compromises that each seem harmless but collectively erode the identity you invested in building. The guardian doesn't need to approve every asset, but they do need to be the final word on disputes and the person who updates the guidelines when ambiguities arise.</p>
+
+          <h2 id="section-10"><span class="section-number">10</span> Evolve Without Losing Your Soul</h2>
+          <p>The strongest brands evolve continuously without losing their identity. Think of brand evolution like a person growing older — your values and personality stay the same, but your wardrobe, vocabulary, and interests mature over time. The brands that stay relevant for decades aren't the ones that never change; they're the ones that change in ways that feel like a natural extension of who they already are. When Nike shifted from "running shoes" to "athletic lifestyle," it wasn't a departure — it was a deepening of their core purpose to inspire athletes (and their redefinition of who counts as an athlete).</p>
+          <p>Plan for evolution by building flexibility into your identity from the start. A logo system with recognizable structures but seasonal color variations, a typography system with alternate display weights, and a photography direction with room for new subjects and contexts — these create space to refresh your brand without reinventing it. Conduct an annual brand audit where you honestly assess whether your identity still reflects who you are and who you serve. If your audience has shifted, your products have expanded, or your market position has changed, your brand identity should evolve to match.</p>
+          <p>The key discipline is knowing the difference between evolution and revolution. Evolution builds on recognition; revolution destroys it. If your existing customers would look at your new brand and say "I didn't recognize you," you've gone too far. If they'd say "this feels like a fresher version of who you've always been," you've hit the sweet spot. Test major brand changes with your core audience before rolling them out. Their trust is your most valuable asset, and no redesign is worth losing it.</p>
+
+          <!-- In-Article CTA -->
+          <div class="article-cta-banner fade-in">
+            <h3>Ready to Build a Brand That Stands Out?</h3>
+            <p>Prestige Group has helped hundreds of businesses create brand identities that attract customers and drive growth. Let's talk about yours.</p>
+            <a href="../index.html#contact" class="btn btn-gold">Get Your Free Brand Consultation</a>
+          </div>
+
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+          <div class="sidebar-card">
+            <h3>In This Article</h3>
+            <ul>
+              <li><a href="#section-1"><span class="num">01</span> Define Your Core Purpose</a></li>
+              <li><a href="#section-2"><span class="num">02</span> Know Your Audience</a></li>
+              <li><a href="#section-3"><span class="num">03</span> Craft Your Brand Voice</a></li>
+              <li><a href="#section-4"><span class="num">04</span> Design a Logo</a></li>
+              <li><a href="#section-5"><span class="num">05</span> Build a Color System</a></li>
+              <li><a href="#section-6"><span class="num">06</span> Choose Typography</a></li>
+              <li><a href="#section-7"><span class="num">07</span> Visual Language</a></li>
+              <li><a href="#section-8"><span class="num">08</span> Brand Guidelines</a></li>
+              <li><a href="#section-9"><span class="num">09</span> Apply Consistently</a></li>
+              <li><a href="#section-10"><span class="num">10</span> Evolve Your Brand</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>More Resources</h3>
+            <ul>
+              <li><a href="../blog.html">← Back to All Articles</a></li>
+              <li><a href="../index.html#features">Our Branding Services</a></li>
+              <li><a href="../index.html#how-it-works">Our Process</a></li>
+              <li><a href="../index.html#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA BANNER
+       ============================================================ -->
+  <section class="cta-banner" id="contact">
+    <div class="container">
+      <span class="section-label slide-up">Ready to Grow?</span>
+      <h2 class="slide-up">Let's Build Something <span style="color: var(--gold);">Extraordinary</span> Together</h2>
+      <p class="slide-up">Stop losing customers to an outdated brand. Get a free consultation and see exactly how we'd transform your identity and online presence.</p>
+      <div class="cta-banner-buttons slide-up">
+        <a href="../index.html#contact" class="btn btn-gold">Get Your Free Proposal</a>
+        <a href="tel:+15559876543" class="btn btn-secondary">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+          Call (555) 987-6543
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER (4-column)
+       ============================================================ -->
+  <footer class="footer" id="about">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand -->
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="8" fill="url(#logoGrad2)"/>
+              <path d="M10 12L18 8L26 12V24L18 28L10 24V12Z" stroke="#fff" stroke-width="1.5" fill="none"/>
+              <path d="M18 8V28M10 12L26 24M26 12L10 24" stroke="#D4A853" stroke-width="1.5"/>
+              <defs>
+                <linearGradient id="logoGrad2" x1="0" y1="0" x2="36" y2="36">
+                  <stop stop-color="#2563EB"/>
+                  <stop offset="1" stop-color="#0F1629"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            Prestige<span class="logo-gold"> Group</span>
+          </a>
+          <p>A full-service digital agency that builds, rebuilds, and optimizes websites for businesses ready to dominate their market online.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/prestigegroupdigital" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/prestigegroupdigital" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.987 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/prestigegroupdigital" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://twitter.com/prestigegrp" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="../index.html#features">Web Design</a></li>
+            <li><a href="../index.html#features">Web Development</a></li>
+            <li><a href="../index.html#features">SEO Optimization</a></li>
+            <li><a href="../index.html#features">Branding & Identity</a></li>
+            <li><a href="../index.html#features">Digital Marketing</a></li>
+            <li><a href="../index.html#features">Maintenance & Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../index.html#about">About Us</a></li>
+            <li><a href="../index.html#how-it-works">Our Process</a></li>
+            <li><a href="../index.html#testimonials">Client Stories</a></li>
+            <li><a href="../blog.html">Blog & Resources</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li>
+              <a href="mailto:hello@prestigegroup.com">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" style="display:inline;vertical-align:middle;margin-right:4px;"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                hello@prestigegroup.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+15559876543">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" style="display:inline;vertical-align:middle;margin-right:4px;"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                (555) 987-6543
+              </a>
+            </li>
+            <li>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" style="display:inline;vertical-align:middle;margin-right:4px;"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                1200 Innovation Dr, Suite 400<br>Austin, TX 78701
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span>© <span id="footer-year"></span> Prestige Group. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="../privacy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms of Service</a>
+          <a href="../cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="570" viewBox="0 0 800 570">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="570" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F1629"/>
+      <stop offset="1" stop-color="#162040"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="570" fill="url(#bg)"/>
+  <!-- Abstract brand identity elements -->
+  <circle cx="300" cy="250" r="80" fill="none" stroke="#2563EB" stroke-width="3" opacity="0.6"/>
+  <circle cx="300" cy="250" r="55" fill="none" stroke="#D4A853" stroke-width="2" opacity="0.7"/>
+  <circle cx="300" cy="250" r="30" fill="#2563EB" opacity="0.4"/>
+  <rect x="420" y="170" width="200" height="8" rx="4" fill="#D4A853" opacity="0.8"/>
+  <rect x="420" y="200" width="160" height="6" rx="3" fill="#94A3B8" opacity="0.5"/>
+  <rect x="420" y="225" width="180" height="6" rx="3" fill="#94A3B8" opacity="0.4"/>
+  <rect x="420" y="250" width="140" height="6" rx="3" fill="#94A3B8" opacity="0.3"/>
+  <!-- Color swatches -->
+  <rect x="420" y="290" width="35" height="35" rx="4" fill="#2563EB"/>
+  <rect x="462" y="290" width="35" height="35" rx="4" fill="#D4A853"/>
+  <rect x="504" y="290" width="35" height="35" rx="4" fill="#0F1629" stroke="#94A3B8" stroke-width="1"/>
+  <rect x="546" y="290" width="35" height="35" rx="4" fill="#3b82f6"/>
+  <!-- Typography mockup -->
+  <text x="420" y="370" font-family="Arial,sans-serif" font-weight="800" font-size="28" fill="#ffffff" opacity="0.9">Aa Bb Cc</text>
+  <text x="420" y="400" font-family="Arial,sans-serif" font-weight="400" font-size="16" fill="#94A3B8" opacity="0.7">Brand Identity Guidelines</text>
+  <!-- Decorative dots -->
+  <circle cx="150" cy="180" r="4" fill="#D4A853" opacity="0.3"/>
+  <circle cx="200" cy="140" r="3" fill="#2563EB" opacity="0.4"/>
+  <circle cx="600" cy="380" r="3" fill="#D4A853" opacity="0.3"/>
+  <circle cx="650" cy="350" r="5" fill="#2563EB" opacity="0.2"/>
+</svg>

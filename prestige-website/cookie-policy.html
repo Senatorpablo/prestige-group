@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cookie Policy — Prestige Group explains what cookies we use on our website, why we use them, and how you can manage your cookie preferences.">
+  <meta name="keywords" content="cookie policy, cookies, tracking, website cookies, Prestige Group">
+  <meta name="author" content="Prestige Group">
+  <meta property="og:title" content="Cookie Policy — Prestige Group">
+  <meta property="og:description" content="Understand how Prestige Group uses cookies and tracking technologies on our website.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.prestigegroup.com/cookie-policy">
+  <meta property="og:image" content="assets/og-image.svg">
+  <link rel="canonical" href="https://www.prestigegroup.com/cookie-policy">
+  <title>Cookie Policy — Prestige Group</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Legal Page Styles -->
+  <style>
+    .legal-hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #162040 50%, #1a2750 100%);
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .legal-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .legal-hero .container { position: relative; z-index: 2; }
+    .legal-hero-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .legal-hero-subtitle {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .legal-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 32px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--gold);
+      transition: color var(--transition);
+    }
+    .legal-back:hover { color: var(--gold-light); }
+    .legal-back svg { width: 18px; height: 18px; }
+
+    .legal-content {
+      padding: 80px 0 100px;
+      background: var(--white);
+    }
+    .legal-body {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .legal-updated {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--blue);
+      background: rgba(37, 99, 235, 0.08);
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+    .legal-body h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid rgba(37, 99, 235, 0.1);
+    }
+    .legal-body h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    .legal-body p {
+      font-size: 0.98rem;
+      line-height: 1.8;
+      color: #475569;
+      margin-bottom: 16px;
+    }
+    .legal-body ul {
+      list-style: disc;
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    .legal-body li {
+      font-size: 0.98rem;
+      line-height: 1.8;
+      color: #475569;
+      margin-bottom: 6px;
+    }
+    .legal-body a {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color var(--transition);
+    }
+    .legal-body a:hover { color: var(--blue-dark); }
+
+    /* Cookie table */
+    .cookie-table-wrap {
+      overflow-x: auto;
+      margin: 24px 0 32px;
+      border-radius: var(--radius-sm);
+      border: 1px solid #e2e8f0;
+    }
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    .cookie-table th {
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 600;
+      text-align: left;
+      padding: 14px 16px;
+      white-space: nowrap;
+    }
+    .cookie-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #475569;
+      vertical-align: top;
+    }
+    .cookie-table tr:last-child td { border-bottom: none; }
+    .cookie-table tr:hover td { background: rgba(37, 99, 235, 0.03); }
+    .cookie-table .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+    .badge-necessary { background: rgba(37, 99, 235, 0.1); color: var(--blue); }
+    .badge-performance { background: rgba(212, 168, 83, 0.15); color: #a07c2e; }
+    .badge-functionality { background: rgba(34, 197, 94, 0.1); color: #15803d; }
+    .badge-marketing { background: rgba(239, 68, 68, 0.1); color: #b91c1c; }
+
+    .legal-footer {
+      background: var(--navy);
+      padding: 40px 0;
+    }
+    .legal-footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .legal-footer span {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .legal-footer-links {
+      display: flex;
+      gap: 24px;
+    }
+    .legal-footer-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      transition: color var(--transition);
+    }
+    .legal-footer-links a:hover,
+    .legal-footer-links a.active {
+      color: var(--gold);
+    }
+
+    @media (max-width: 768px) {
+      .legal-hero { padding: 120px 0 60px; }
+      .legal-content { padding: 48px 0 64px; }
+      .legal-footer-inner { flex-direction: column; text-align: center; }
+      .cookie-table { font-size: 0.8rem; }
+      .cookie-table th, .cookie-table td { padding: 10px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="legal-hero">
+    <div class="container">
+      <a href="index.html" class="legal-back">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+        Back to Home
+      </a>
+      <h1 class="legal-hero-title">Cookie Policy</h1>
+      <p class="legal-hero-subtitle">This Cookie Policy explains what cookies we use on our website, why we use them, and how you can manage your preferences.</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="legal-content">
+    <div class="container">
+      <div class="legal-body">
+        <span class="legal-updated">Last Updated: April 2025</span>
+
+        <h2>1. What Are Cookies?</h2>
+        <p>Cookies are small text files that are stored on your device (computer, tablet, or mobile phone) when you visit a website. They allow the website to recognize your device and store information about your preferences or past actions. Cookies are widely used to make websites work more efficiently, improve user experience, and provide reporting information to website owners.</p>
+        <p>In addition to cookies, this policy also covers similar technologies such as web beacons (pixel tags), local storage, and session storage, which function similarly to cookies for the purposes described below.</p>
+
+        <h2>2. How We Use Cookies</h2>
+        <p>Prestige Group uses cookies on our website for the following purposes:</p>
+        <ul>
+          <li><strong>Essential functionality:</strong> To enable the core features of our website, such as secure area access, form submissions, and session persistence</li>
+          <li><strong>Performance monitoring:</strong> To understand how visitors interact with our website so we can improve its design, content, and performance</li>
+          <li><strong>Personalization:</strong> To remember your preferences and settings to provide a more tailored experience</li>
+          <li><strong>Marketing and advertising:</strong> To deliver relevant content and advertisements and measure the effectiveness of our campaigns</li>
+        </ul>
+
+        <h2>3. Types of Cookies We Use</h2>
+        <p>We categorize the cookies used on our website into four types:</p>
+
+        <h3>3.1 Strictly Necessary Cookies</h3>
+        <p>These cookies are essential for the website to function properly. They enable core functionality such as page navigation, secure area access, and session management. The website cannot function properly without these cookies. Strictly necessary cookies do not require your consent.</p>
+
+        <div class="cookie-table-wrap">
+          <table class="cookie-table">
+            <thead>
+              <tr>
+                <th>Cookie Name</th>
+                <th>Purpose</th>
+                <th>Duration</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>PHPSESSID</code></td>
+                <td>Preserves user session state across page requests</td>
+                <td>Session</td>
+                <td><span class="badge badge-necessary">Necessary</span></td>
+              </tr>
+              <tr>
+                <td><code>csrf_token</code></td>
+                <td>Protects against Cross-Site Request Forgery attacks</td>
+                <td>Session</td>
+                <td><span class="badge badge-necessary">Necessary</span></td>
+              </tr>
+              <tr>
+                <td><code>cookie_consent</code></td>
+                <td>Stores your cookie preference selections</td>
+                <td>1 year</td>
+                <td><span class="badge badge-necessary">Necessary</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>3.2 Performance Cookies</h3>
+        <p>These cookies collect anonymous, aggregated information about how visitors use our website, including which pages are visited most often, how users navigate between pages, and whether error messages are encountered. All data collected by performance cookies is aggregated and anonymized.</p>
+
+        <div class="cookie-table-wrap">
+          <table class="cookie-table">
+            <thead>
+              <tr>
+                <th>Cookie Name</th>
+                <th>Purpose</th>
+                <th>Duration</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>_ga</code></td>
+                <td>Google Analytics — distinguishes unique visitors</td>
+                <td>2 years</td>
+                <td><span class="badge badge-performance">Performance</span></td>
+              </tr>
+              <tr>
+                <td><code>_ga_*</code></td>
+                <td>Google Analytics — maintains session state</td>
+                <td>2 years</td>
+                <td><span class="badge badge-performance">Performance</span></td>
+              </tr>
+              <tr>
+                <td><code>_gid</code></td>
+                <td>Google Analytics — distinguishes unique visitors (24-hour window)</td>
+                <td>24 hours</td>
+                <td><span class="badge badge-performance">Performance</span></td>
+              </tr>
+              <tr>
+                <td><code>_gat</code></td>
+                <td>Google Analytics — throttles request rate</td>
+                <td>1 minute</td>
+                <td><span class="badge badge-performance">Performance</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>3.3 Functionality Cookies</h3>
+        <p>These cookies allow the website to remember choices you make (such as your language, region, or display preferences) and provide enhanced, personalized features. They may also be used to provide services you have requested, such as watching a video or commenting on a blog.</p>
+
+        <div class="cookie-table-wrap">
+          <table class="cookie-table">
+            <thead>
+              <tr>
+                <th>Cookie Name</th>
+                <th>Purpose</th>
+                <th>Duration</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>lang_pref</code></td>
+                <td>Stores your selected language preference</td>
+                <td>1 year</td>
+                <td><span class="badge badge-functionality">Functionality</span></td>
+              </tr>
+              <tr>
+                <td><code>site_theme</code></td>
+                <td>Remembers your display or theme preference</td>
+                <td>1 year</td>
+                <td><span class="badge badge-functionality">Functionality</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>3.4 Marketing Cookies</h3>
+        <p>These cookies are used to track visitors across websites to display relevant advertisements. They are typically placed by advertising networks with our permission. They remember your visit and share this information with other organizations (e.g., advertisers) to serve ads that are relevant to you.</p>
+
+        <div class="cookie-table-wrap">
+          <table class="cookie-table">
+            <thead>
+              <tr>
+                <th>Cookie Name</th>
+                <th>Purpose</th>
+                <th>Duration</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>_fbp</code></td>
+                <td>Facebook Pixel — tracks conversions for Facebook advertising</td>
+                <td>3 months</td>
+                <td><span class="badge badge-marketing">Marketing</span></td>
+              </tr>
+              <tr>
+                <td><code>_gcl_au</code></td>
+                <td>Google Ads — tracks conversion for Google Ads campaigns</td>
+                <td>3 months</td>
+                <td><span class="badge badge-marketing">Marketing</span></td>
+              </tr>
+              <tr>
+                <td><code>li_sugr</code></td>
+                <td>LinkedIn Insight Tag — tracks LinkedIn ad conversions</td>
+                <td>3 months</td>
+                <td><span class="badge badge-marketing">Marketing</span></td>
+              </tr>
+              <tr>
+                <td><code>hubspotutk</code></td>
+                <td>HubSpot — tracks visitor identity for CRM and marketing automation</td>
+                <td>13 months</td>
+                <td><span class="badge badge-marketing">Marketing</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>4. Third-Party Cookies</h2>
+        <p>Some cookies on our website are placed by third-party services that appear on our pages. We do not control these cookies, and their use is governed by the respective third party's privacy policy:</p>
+        <ul>
+          <li><strong>Google Analytics &amp; Google Ads:</strong> <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener noreferrer">Google Cookie Policy</a></li>
+          <li><strong>Facebook Pixel:</strong> <a href="https://www.facebook.com/policies/cookies/" target="_blank" rel="noopener noreferrer">Facebook Cookie Policy</a></li>
+          <li><strong>LinkedIn Insight Tag:</strong> <a href="https://www.linkedin.com/legal/cookie-policy" target="_blank" rel="noopener noreferrer">LinkedIn Cookie Policy</a></li>
+          <li><strong>HubSpot:</strong> <a href="https://legal.hubspot.com/privacy-policy" target="_blank" rel="noopener noreferrer">HubSpot Privacy Policy</a></li>
+        </ul>
+
+        <h2>5. Managing Your Cookie Preferences</h2>
+        <h3>5.1 Cookie Consent Banner</h3>
+        <p>When you first visit our website, you will see a cookie consent banner that allows you to accept or reject non-essential cookies. You can choose to accept all cookies, reject all non-essential cookies, or customize your preferences by category. Your preferences are stored in a cookie so we remember your choices on subsequent visits.</p>
+
+        <h3>5.2 Browser Settings</h3>
+        <p>You can also control and manage cookies through your browser settings. Most browsers allow you to:</p>
+        <ul>
+          <li>View what cookies are stored and delete them individually</li>
+          <li>Block all cookies or only third-party cookies</li>
+          <li>Block cookies from specific websites</li>
+          <li>Clear all cookies when you close the browser</li>
+          <li>Enable "Do Not Track" signals (though not all websites honor this)</li>
+        </ul>
+        <p>Instructions for cookie management in popular browsers:</p>
+        <ul>
+          <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+          <li><a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+          <li><a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener noreferrer">Apple Safari</a></li>
+          <li><a href="https://support.microsoft.com/en-us/microsoft-edge/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
+        </ul>
+
+        <h3>5.3 Opt-Out Tools</h3>
+        <p>You may also opt out of interest-based advertising and certain tracking technologies through industry opt-out programs:</p>
+        <ul>
+          <li><strong>Network Advertising Initiative (NAI):</strong> <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener noreferrer">https://optout.networkadvertising.org/</a></li>
+          <li><strong>Digital Advertising Alliance (DAA):</strong> <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer">https://optout.aboutads.info/</a></li>
+          <li><strong>Google Ads Settings:</strong> <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">https://adssettings.google.com/</a></li>
+          <li><strong>Facebook Ad Preferences:</strong> <a href="https://www.facebook.com/ads/preferences/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/ads/preferences/</a></li>
+        </ul>
+
+        <h3>5.4 Mobile Device Opt-Out</h3>
+        <p>For mobile devices, you can reset your Advertising Identifier (IDFA on iOS or GAID on Android) in your device settings:</p>
+        <ul>
+          <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Apple Advertising → Limit Ad Tracking</li>
+          <li><strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization</li>
+        </ul>
+
+        <h2>6. What Happens If You Disable Cookies</h2>
+        <p>If you choose to disable or block cookies, some features of our website may not function as intended. Specifically:</p>
+        <ul>
+          <li>You may not be able to use contact forms or secure client portals</li>
+          <li>Your preferences and settings will not be remembered across visits</li>
+          <li>We will not be able to analyze how our website is being used, which may affect our ability to improve your experience</li>
+          <li>You may see less relevant advertising and content</li>
+        </ul>
+        <p>The core content and navigation of our website will remain accessible even with cookies disabled.</p>
+
+        <h2>7. Updates to This Cookie Policy</h2>
+        <p>We may update this Cookie Policy from time to time to reflect changes in the cookies we use, changes in technology, or for other operational, legal, or regulatory reasons. The "Last Updated" date at the top of this page indicates when the policy was last revised. We encourage you to review this policy periodically to stay informed about how we use cookies.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions about our use of cookies or this Cookie Policy, please contact us:</p>
+        <ul>
+          <li><strong>Prestige Group, LLC</strong></li>
+          <li>1200 Innovation Drive, Suite 400, Austin, TX 78701</li>
+          <li>Email: <a href="mailto:hello@prestigegroup.com">hello@prestigegroup.com</a></li>
+          <li>Phone: <a href="tel:+15559876543">(555) 987-6543</a></li>
+        </ul>
+        <p>For more information about how we handle your personal data, please see our <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="legal-footer">
+    <div class="container">
+      <div class="legal-footer-inner">
+        <span>&copy; 2025 Prestige Group. All rights reserved.</span>
+        <div class="legal-footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="cookie-policy.html" class="active">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

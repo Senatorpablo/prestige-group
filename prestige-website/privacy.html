@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy — Prestige Group outlines how we collect, use, and protect your personal data when you use our digital agency services and website.">
+  <meta name="keywords" content="privacy policy, data protection, GDPR, personal data, Prestige Group">
+  <meta name="author" content="Prestige Group">
+  <meta property="og:title" content="Privacy Policy — Prestige Group">
+  <meta property="og:description" content="Learn how Prestige Group collects, uses, and safeguards your personal information.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.prestigegroup.com/privacy">
+  <meta property="og:image" content="assets/og-image.svg">
+  <link rel="canonical" href="https://www.prestigegroup.com/privacy">
+  <title>Privacy Policy — Prestige Group</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Legal Page Styles -->
+  <style>
+    .legal-hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #162040 50%, #1a2750 100%);
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .legal-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .legal-hero .container { position: relative; z-index: 2; }
+    .legal-hero-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .legal-hero-subtitle {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .legal-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 32px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--gold);
+      transition: color var(--transition);
+    }
+    .legal-back:hover { color: var(--gold-light); }
+    .legal-back svg { width: 18px; height: 18px; }
+
+    .legal-content {
+      padding: 80px 0 100px;
+      background: var(--white);
+    }
+    .legal-body {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .legal-updated {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--blue);
+      background: rgba(37, 99, 235, 0.08);
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+    .legal-body h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid rgba(37, 99, 235, 0.1);
+    }
+    .legal-body h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    .legal-body p {
+      font-size: 0.98rem;
+      line-height: 1.8;
+      color: #475569;
+      margin-bottom: 16px;
+    }
+    .legal-body ul {
+      list-style: disc;
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    .legal-body li {
+      font-size: 0.98rem;
+      line-height: 1.8;
+      color: #475569;
+      margin-bottom: 6px;
+    }
+    .legal-body a {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color var(--transition);
+    }
+    .legal-body a:hover { color: var(--blue-dark); }
+
+    .legal-footer {
+      background: var(--navy);
+      padding: 40px 0;
+    }
+    .legal-footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .legal-footer span {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .legal-footer-links {
+      display: flex;
+      gap: 24px;
+    }
+    .legal-footer-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      transition: color var(--transition);
+    }
+    .legal-footer-links a:hover,
+    .legal-footer-links a.active {
+      color: var(--gold);
+    }
+
+    @media (max-width: 768px) {
+      .legal-hero { padding: 120px 0 60px; }
+      .legal-content { padding: 48px 0 64px; }
+      .legal-footer-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="legal-hero">
+    <div class="container">
+      <a href="index.html" class="legal-back">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+        Back to Home
+      </a>
+      <h1 class="legal-hero-title">Privacy Policy</h1>
+      <p class="legal-hero-subtitle">Your privacy matters to us. This policy explains how Prestige Group collects, uses, and protects your personal information.</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="legal-content">
+    <div class="container">
+      <div class="legal-body">
+        <span class="legal-updated">Last Updated: April 2025</span>
+
+        <h2>1. Introduction</h2>
+        <p>Prestige Group, LLC ("Prestige Group," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy describes how we collect, use, disclose, and safeguard your personal information when you visit our website at <a href="https://www.prestigegroup.com">www.prestigegroup.com</a> (the "Site"), engage our digital agency services, or otherwise interact with us.</p>
+        <p>This policy applies to all individuals who access or use our Site and services, including clients, prospective clients, website visitors, and any other data subjects. By accessing or using our Site, you acknowledge that you have read, understood, and agree to the practices described in this Privacy Policy.</p>
+        <p>Prestige Group is located at 1200 Innovation Drive, Suite 400, Austin, TX 78701. For privacy-related inquiries, contact us at <a href="mailto:hello@prestigegroup.com">hello@prestigegroup.com</a> or call <a href="tel:+15559876543">(555) 987-6543</a>.</p>
+
+        <h2>2. Information We Collect</h2>
+        <h3>2.1 Information You Provide Directly</h3>
+        <p>We collect personal information that you voluntarily provide when you:</p>
+        <ul>
+          <li>Fill out contact forms or request a consultation on our Site</li>
+          <li>Subscribe to our newsletter or marketing communications</li>
+          <li>Submit a project brief or onboarding questionnaire</li>
+          <li>Communicate with us via email, phone, or live chat</li>
+          <li>Create an account or client portal profile</li>
+          <li>Provide feedback, reviews, or testimonials</li>
+        </ul>
+        <p>This information may include your name, email address, phone number, company name, job title, business address, project details, and any other information you choose to share.</p>
+
+        <h3>2.2 Information Collected Automatically</h3>
+        <p>When you visit or interact with our Site, we automatically collect certain technical information, including:</p>
+        <ul>
+          <li>IP address and geolocation data (country/city level)</li>
+          <li>Browser type and version, operating system</li>
+          <li>Device type and identifiers</li>
+          <li>Pages visited, time spent, click patterns, and navigation paths</li>
+          <li>Referring URL and search terms used to find our Site</li>
+          <li>Date and time of visits</li>
+        </ul>
+
+        <h3>2.3 Information from Third-Party Sources</h3>
+        <p>We may receive information about you from third-party sources, including:</p>
+        <ul>
+          <li>Analytics providers (e.g., Google Analytics)</li>
+          <li>Advertising platforms and ad networks</li>
+          <li>Social media platforms when you interact with our social pages</li>
+          <li>Business partners with whom we collaborate</li>
+          <li>Publicly available databases and directories</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the information we collect for the following purposes:</p>
+        <ul>
+          <li><strong>Service Delivery:</strong> To provide, maintain, and improve our digital agency services, including web design, development, SEO, branding, and marketing services</li>
+          <li><strong>Communication:</strong> To respond to your inquiries, send project updates, schedule consultations, and provide customer support</li>
+          <li><strong>Marketing:</strong> To send you newsletters, promotional materials, and information about services we believe may interest you (with your consent where required)</li>
+          <li><strong>Analytics & Improvement:</strong> To analyze Site usage, improve user experience, optimize our services, and make business decisions</li>
+          <li><strong>Security:</strong> To detect, prevent, and address fraud, security breaches, and other potentially prohibited or illegal activities</li>
+          <li><strong>Legal Compliance:</strong> To comply with applicable laws, regulations, legal processes, or governmental requests</li>
+        </ul>
+
+        <h2>4. Cookies and Tracking Technologies</h2>
+        <p>We use cookies and similar tracking technologies to collect information about your browsing activities. Cookies are small data files stored on your device that help us improve our Site and personalize your experience.</p>
+        <p>We use the following categories of cookies:</p>
+        <ul>
+          <li><strong>Strictly Necessary Cookies:</strong> Required for the Site to function properly (e.g., session cookies, security cookies)</li>
+          <li><strong>Performance Cookies:</strong> Collect anonymous data about how visitors use the Site (e.g., Google Analytics)</li>
+          <li><strong>Functionality Cookies:</strong> Remember your preferences and settings to enhance your experience</li>
+          <li><strong>Marketing Cookies:</strong> Used to deliver relevant advertisements and track campaign effectiveness</li>
+        </ul>
+        <p>For detailed information about the specific cookies we use and how to manage them, please refer to our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+
+        <h2>5. Third-Party Services</h2>
+        <p>We may share your information with trusted third-party service providers who assist us in operating our business:</p>
+        <ul>
+          <li><strong>Google LLC:</strong> Analytics, advertising, and cloud services (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)</li>
+          <li><strong>HubSpot, Inc.:</strong> CRM and marketing automation</li>
+          <li><strong>Stripe, Inc.:</strong> Payment processing (card data is handled directly by Stripe; we do not store full card numbers)</li>
+          <li><strong>Mailchimp (Intuit):</strong> Email marketing and newsletter distribution</li>
+          <li><strong>Amazon Web Services:</strong> Cloud hosting and data storage</li>
+          <li><strong>Slack Technologies:</strong> Internal team communication, which may contain client project details</li>
+        </ul>
+        <p>These third parties are contractually obligated to process your data only as instructed by us and in accordance with applicable privacy laws. We do not sell your personal information to any third party.</p>
+
+        <h2>6. Data Retention</h2>
+        <p>We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. Specifically:</p>
+        <ul>
+          <li><strong>Client records:</strong> Retained for the duration of the business relationship and for up to 5 years thereafter for legal and accounting purposes</li>
+          <li><strong>Marketing data:</strong> Retained until you withdraw consent or request deletion</li>
+          <li><strong>Analytics data:</strong> Aggregated and anonymized after 26 months; raw data deleted within 30 months</li>
+          <li><strong>Contact form submissions:</strong> Retained for up to 3 years from the date of submission</li>
+        </ul>
+
+        <h2>7. Your Rights Under GDPR</h2>
+        <p>If you are a resident of the European Economic Area (EEA), United Kingdom, or Switzerland, you have the following rights under the General Data Protection Regulation (GDPR):</p>
+        <ul>
+          <li><strong>Right of Access (Article 15):</strong> You may request a copy of the personal data we hold about you</li>
+          <li><strong>Right to Rectification (Article 16):</strong> You may request correction of inaccurate or incomplete personal data</li>
+          <li><strong>Right to Erasure (Article 17):</strong> You may request deletion of your personal data, subject to legal retention obligations</li>
+          <li><strong>Right to Restriction (Article 18):</strong> You may request that we restrict the processing of your personal data under certain circumstances</li>
+          <li><strong>Right to Data Portability (Article 20):</strong> You may request to receive your personal data in a structured, commonly used, machine-readable format</li>
+          <li><strong>Right to Object (Article 21):</strong> You may object to processing based on legitimate interests or for direct marketing purposes</li>
+          <li><strong>Right Regarding Automated Decisions (Article 22):</strong> You have the right not to be subject to decisions based solely on automated processing that produce legal or similarly significant effects</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us at <a href="mailto:hello@prestigegroup.com">hello@prestigegroup.com</a>. We will respond to your request within 30 days. We may ask for verification to confirm your identity before processing your request.</p>
+        <p>You also have the right to lodge a complaint with a supervisory authority in your jurisdiction if you believe our processing of your personal data violates the GDPR.</p>
+
+        <h2>8. California Privacy Rights (CCPA)</h2>
+        <p>If you are a California resident, the California Consumer Privacy Act (CCPA) provides you with additional rights:</p>
+        <ul>
+          <li><strong>Right to Know:</strong> You may request information about the categories and specific pieces of personal data we collect, the purposes for which it is used, and the categories of third parties with whom it is shared</li>
+          <li><strong>Right to Delete:</strong> You may request that we delete your personal information</li>
+          <li><strong>Right to Opt-Out of Sale:</strong> We do not sell personal information. You have the right to opt out of any future sale of personal data</li>
+          <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your CCPA rights</li>
+        </ul>
+
+        <h2>9. Data Security</h2>
+        <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+        <ul>
+          <li>SSL/TLS encryption for all data transmitted through our Site</li>
+          <li>Role-based access controls limiting data access to authorized personnel</li>
+          <li>Regular security audits and vulnerability assessments</li>
+          <li>Employee training on data protection and privacy practices</li>
+          <li>Secure data storage with encryption at rest for sensitive information</li>
+        </ul>
+        <p>While we strive to protect your data, no method of electronic transmission or storage is fully secure. We cannot guarantee absolute security of your information.</p>
+
+        <h2>10. International Data Transfers</h2>
+        <p>Prestige Group is based in the United States. If you access our Site from outside the U.S., please be aware that your information may be transferred to, stored, and processed in the United States or other countries where our service providers operate. By using our Site, you consent to such transfers. We ensure that appropriate safeguards are in place, including Standard Contractual Clauses (SCCs) approved by the European Commission, where applicable.</p>
+
+        <h2>11. Children's Privacy</h2>
+        <p>Our Site and services are not directed to individuals under the age of 16. We do not knowingly collect personal information from children. If you become aware that a child has provided us with personal data, please contact us at <a href="mailto:hello@prestigegroup.com">hello@prestigegroup.com</a>, and we will take steps to delete such information promptly.</p>
+
+        <h2>12. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. The "Last Updated" date at the top of this page indicates when the policy was last revised. We will notify you of material changes by posting a notice on our Site or by emailing you. Your continued use of our Site after any changes constitutes your acceptance of the revised policy.</p>
+
+        <h2>13. Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+        <ul>
+          <li><strong>Prestige Group, LLC</strong></li>
+          <li>1200 Innovation Drive, Suite 400, Austin, TX 78701</li>
+          <li>Email: <a href="mailto:hello@prestigegroup.com">hello@prestigegroup.com</a></li>
+          <li>Phone: <a href="tel:+15559876543">(555) 987-6543</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="legal-footer">
+    <div class="container">
+      <div class="legal-footer-inner">
+        <span>&copy; 2025 Prestige Group. All rights reserved.</span>
+        <div class="legal-footer-links">
+          <a href="privacy.html" class="active">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

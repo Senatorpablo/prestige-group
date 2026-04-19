@@ -404,26 +404,60 @@ function initFormValidation() {
       return;
     }
 
-    // Simulate submission (replace with real endpoint)
-    var submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+    // Submit to Formspree via fetch (or fallback to native submit)
+    var formAction = form.getAttribute("action");
+    var formData = new FormData(form);
+
+    // Add _gotcha field to prevent spam bots (Formspree honeypot)
+    if (!formData.has("_gotcha")) {
+      var gotcha = document.createElement("input");
+      gotcha.type = "text";
+      gotcha.name = "_gotcha";
+      gotcha.style.display = "none";
+      gotcha.tabIndex = -1;
+      gotcha.autocomplete = "off";
+      form.appendChild(gotcha);
+    }
+
     if (submitBtn) {
       submitBtn.disabled = true;
       submitBtn.textContent = "Sending…";
     }
 
-    // ---- Replace this block with actual fetch() to your API ----
-    setTimeout(function () {
-      form.classList.add("form--success");
-      var successMsg = form.querySelector(".form-success-msg");
-      if (successMsg) successMsg.style.display = "block";
-      form.reset();
-
-      if (submitBtn) {
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Send Message";
-      }
-    }, 1500);
-    // -------------------------------------------------------------
+    if (formAction) {
+      // Real fetch submission
+      fetch(formAction, {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+      })
+      .then(function (response) {
+        if (response.ok) {
+          form.classList.add("form--success");
+          var successMsg = form.querySelector(".form-success-msg");
+          if (successMsg) successMsg.style.display = "block";
+          form.reset();
+        } else {
+          return response.json().then(function (data) {
+            throw new Error(data.errors ? data.errors.map(function(e) { return e.message; }).join(", ") : "Submission failed");
+          });
+        }
+      })
+      .catch(function (err) {
+        var errorEl = form.querySelector(".form-error") || form.querySelector(".form-success-msg");
+        if (errorEl) {
+          errorEl.style.display = "block";
+          errorEl.style.color = "#ef4444";
+          errorEl.textContent = "Oops! " + (err.message || "Something went wrong. Please try again.");
+        }
+      })
+      .finally(function () {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send Message";
+        }
+      });
+    }
   });
 }
 
@@ -498,6 +532,14 @@ function initActiveNavHighlight() {
 }
 
 /* ----------------------------------------------------------
+   11. DYNAMIC FOOTER YEAR
+   ---------------------------------------------------------- */
+function initFooterYear() {
+  var el = document.getElementById("footer-year");
+  if (el) el.textContent = new Date().getFullYear();
+}
+
+/* ----------------------------------------------------------
    BOOT — Initialise everything when DOM is ready
    ---------------------------------------------------------- */
 onReady(function () {
@@ -511,4 +553,5 @@ onReady(function () {
   initFormValidation();
   initBackToTop();
   initActiveNavHighlight();
+  initFooterYear();
 });

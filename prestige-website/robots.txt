@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /privacy.html
+Disallow: /terms.html
+Disallow: /cookie-policy.html
+
+Sitemap: https://senatorpablo.github.io/prestige-group/sitemap.xml

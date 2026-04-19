@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms of Service — Prestige Group provides digital agency services including web design, development, SEO, and marketing under the terms outlined herein.">
+  <meta name="keywords" content="terms of service, legal terms, service agreement, Prestige Group">
+  <meta name="author" content="Prestige Group">
+  <meta property="og:title" content="Terms of Service — Prestige Group">
+  <meta property="og:description" content="Review the terms governing the use of Prestige Group's digital agency services and website.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.prestigegroup.com/terms">
+  <meta property="og:image" content="assets/og-image.svg">
+  <link rel="canonical" href="https://www.prestigegroup.com/terms">
+  <title>Terms of Service — Prestige Group</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Legal Page Styles -->
+  <style>
+    .legal-hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #162040 50%, #1a2750 100%);
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .legal-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .legal-hero .container { position: relative; z-index: 2; }
+    .legal-hero-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .legal-hero-subtitle {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .legal-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 32px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--gold);
+      transition: color var(--transition);
+    }
+    .legal-back:hover { color: var(--gold-light); }
+    .legal-back svg { width: 18px; height: 18px; }
+
+    .legal-content {
+      padding: 80px 0 100px;
+      background: var(--white);
+    }
+    .legal-body {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .legal-updated {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--blue);
+      background: rgba(37, 99, 235, 0.08);
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+    .legal-body h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid rgba(37, 99, 235, 0.1);
+    }
+    .legal-body h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    .legal-body p {
+      font-size: 0.98rem;
+      line-height: 1.8;
+      color: #475569;
+      margin-bottom: 16px;
+    }
+    .legal-body ul, .legal-body ol {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    .legal-body ul { list-style: disc; }
+    .legal-body ol { list-style: decimal; }
+    .legal-body li {
+      font-size: 0.98rem;
+      line-height: 1.8;
+      color: #475569;
+      margin-bottom: 6px;
+    }
+    .legal-body a {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color var(--transition);
+    }
+    .legal-body a:hover { color: var(--blue-dark); }
+
+    .legal-footer {
+      background: var(--navy);
+      padding: 40px 0;
+    }
+    .legal-footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .legal-footer span {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .legal-footer-links {
+      display: flex;
+      gap: 24px;
+    }
+    .legal-footer-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      transition: color var(--transition);
+    }
+    .legal-footer-links a:hover,
+    .legal-footer-links a.active {
+      color: var(--gold);
+    }
+
+    @media (max-width: 768px) {
+      .legal-hero { padding: 120px 0 60px; }
+      .legal-content { padding: 48px 0 64px; }
+      .legal-footer-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="legal-hero">
+    <div class="container">
+      <a href="index.html" class="legal-back">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+        Back to Home
+      </a>
+      <h1 class="legal-hero-title">Terms of Service</h1>
+      <p class="legal-hero-subtitle">These Terms govern your use of Prestige Group's services and website. Please read them carefully before engaging our digital agency services.</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="legal-content">
+    <div class="container">
+      <div class="legal-body">
+        <span class="legal-updated">Last Updated: April 2025</span>
+
+        <h2>1. Agreement to Terms</h2>
+        <p>These Terms of Service ("Terms") constitute a legally binding agreement between you ("Client," "you," or "your") and Prestige Group, LLC ("Prestige Group," "we," "us," or "our") governing your use of our website at <a href="https://www.prestigegroup.com">www.prestigegroup.com</a> (the "Site") and all digital agency services provided by Prestige Group (collectively, the "Services"). By accessing our Site or engaging our Services, you agree to be bound by these Terms. If you do not agree, you must discontinue use of our Site and Services immediately.</p>
+        <p>These Terms are effective as of the date of your first use of the Site or engagement of Services. We reserve the right to modify these Terms at any time; continued use after changes constitutes acceptance of the revised Terms.</p>
+
+        <h2>2. Scope of Services</h2>
+        <p>Prestige Group is a full-service digital agency offering the following services, subject to the terms of individual service agreements or statements of work ("SOW"):</p>
+        <ul>
+          <li>Web Design and User Experience (UX) Design</li>
+          <li>Web Development (front-end, back-end, and full-stack)</li>
+          <li>Search Engine Optimization (SEO) and Search Engine Marketing (SEM)</li>
+          <li>Brand Strategy, Identity Design, and Visual Branding</li>
+          <li>Digital Marketing, including social media management, content marketing, and paid advertising</li>
+          <li>Website Maintenance, Hosting Support, and Ongoing Technical Support</li>
+          <li>Consulting and Strategic Advisory for Digital Transformation</li>
+        </ul>
+        <p>The specific scope, deliverables, timelines, and fees for any engagement shall be defined in a written SOW or proposal document agreed upon by both parties. These Terms supplement and govern all such engagements unless expressly stated otherwise in the SOW.</p>
+
+        <h2>3. Client Obligations</h2>
+        <p>By engaging our Services, you agree to:</p>
+        <ol>
+          <li>Provide timely and accurate information, access, and materials as reasonably required for the performance of Services, including but not limited to content, branding assets, hosting credentials, and third-party account access</li>
+          <li>Designate a primary point of contact authorized to make decisions and provide approvals on your behalf</li>
+          <li>Review deliverables and provide feedback within the timelines specified in the applicable SOW (typically 5 business days unless otherwise agreed)</li>
+          <li>Ensure that all materials you provide do not infringe upon the intellectual property rights of any third party</li>
+          <li>Pay all fees in accordance with the payment terms set forth in the applicable SOW or invoice</li>
+          <li>Comply with all applicable laws and regulations related to your business, content, and use of our Services</li>
+        </ol>
+        <p>Failure to meet these obligations may result in delays, additional charges, or suspension of Services.</p>
+
+        <h2>4. Fees and Payment</h2>
+        <h3>4.1 Fee Structure</h3>
+        <p>Fees for Services shall be as specified in the applicable SOW or proposal. Fees may be structured as fixed-price project fees, hourly rates, monthly retainers, or a combination thereof.</p>
+
+        <h3>4.2 Payment Terms</h3>
+        <p>Invoices are due and payable within 30 days of the invoice date ("Net 30") unless otherwise stated. We accept payment by credit card, ACH bank transfer, and wire transfer. For projects exceeding $5,000, a non-refundable deposit of 50% is due upon project commencement, with the remaining balance due upon completion.</p>
+
+        <h3>4.3 Late Payments</h3>
+        <p>Overdue balances accrue interest at a rate of 1.5% per month (18% annually) or the maximum rate permitted by applicable law, whichever is lower. We reserve the right to suspend Services and withhold deliverables for accounts more than 15 days past due.</p>
+
+        <h3>4.4 Expenses</h3>
+        <p>Client shall reimburse Prestige Group for reasonable, pre-approved out-of-pocket expenses incurred in connection with the Services, including third-party software subscriptions, stock media, domain registrations, and travel expenses.</p>
+
+        <h2>5. Intellectual Property</h2>
+        <h3>5.1 Ownership of Work Product</h3>
+        <p>Upon full payment of all applicable fees, Client shall own all right, title, and interest in the final deliverables created specifically for Client under an SOW (the "Work Product"), subject to the license provisions in Section 5.2. Prestige Group retains ownership of all tools, frameworks, libraries, templates, and proprietary methodologies used to create the Work Product.</p>
+
+        <h3>5.2 License Grant</h3>
+        <p>Prestige Group grants Client a perpetual, worldwide, non-exclusive, royalty-free license to use, modify, and distribute any pre-existing tools, frameworks, or code incorporated into the Work Product that are owned by Prestige Group, solely in connection with Client's use of the Work Product.</p>
+
+        <h3>5.3 Portfolio and Showcase Rights</h3>
+        <p>Prestige Group retains the right to use the Work Product, in whole or in part, for portfolio display, case studies, marketing materials, and award submissions, unless Client requests in writing that such use be delayed (e.g., until a public launch). Prestige Group will remove confidential information from any such showcase materials.</p>
+
+        <h3>5.4 Client-Provided Materials</h3>
+        <p>Client grants Prestige Group a non-exclusive, royalty-free license to use Client-provided materials (e.g., logos, content, images) solely for the purpose of providing the Services under the applicable SOW.</p>
+
+        <h3>5.5 Third-Party IP</h3>
+        <p>Any third-party software, plugins, fonts, stock photos, or other materials used in the Work Product remain subject to their respective license terms. Client is responsible for maintaining any required third-party licenses after project delivery.</p>
+
+        <h2>6. Confidentiality</h2>
+        <p>Each party agrees to keep confidential all non-public information disclosed by the other party ("Confidential Information") and to use such information solely for the purpose of performing obligations under these Terms and any applicable SOW. Confidential Information shall not include information that: (a) is or becomes publicly available through no fault of the receiving party; (b) was already in the receiving party's possession prior to disclosure; (c) is independently developed without reference to the Confidential Information; or (d) is required to be disclosed by law or court order.</p>
+        <p>This confidentiality obligation shall survive for a period of 3 years after the termination or expiration of the applicable engagement.</p>
+
+        <h2>7. Warranties and Disclaimers</h2>
+        <h3>7.1 Prestige Group Warranties</h3>
+        <p>Prestige Group warrants that: (a) we shall perform the Services in a professional and workmanlike manner consistent with industry standards; (b) the Work Product will not infringe upon the intellectual property rights of any third party; and (c) we will comply with all applicable laws in the performance of the Services.</p>
+
+        <h3>7.2 Disclaimer</h3>
+        <p>EXCEPT AS EXPRESSLY PROVIDED IN SECTION 7.1, THE SITE AND SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SITE WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF HARMFUL COMPONENTS.</p>
+
+        <h2>8. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:</p>
+        <p>(a) IN NO EVENT SHALL PRESTIGE GROUP BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, BUSINESS OPPORTUNITIES, OR GOODWILL, REGARDLESS OF THE THEORY OF LIABILITY;</p>
+        <p>(b) PRESTIGE GROUP'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THESE TERMS OR ANY SOW SHALL NOT EXCEED THE GREATER OF (i) THE TOTAL FEES PAID BY CLIENT TO PRESTIGE GROUP IN THE 12 MONTHS PRECEDING THE CLAIM, OR (ii) $50,000 USD;</p>
+        <p>(c) THE FOREGOING LIMITATIONS APPLY REGARDLESS OF WHETHER PRESTIGE GROUP HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND WHETHER THE CLAIM IS BASED ON CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR ANY OTHER THEORY.</p>
+
+        <h2>9. Indemnification</h2>
+        <p>Client agrees to indemnify, defend, and hold harmless Prestige Group, its officers, directors, employees, and agents from and against any and all claims, damages, losses, and expenses (including reasonable attorneys' fees) arising from or related to: (a) Client's breach of these Terms; (b) Client's use of the Work Product; (c) content or materials provided by Client that infringe upon the rights of any third party; or (d) Client's violation of applicable laws.</p>
+        <p>Prestige Group agrees to indemnify Client against claims that the Work Product (as delivered, excluding Client-provided materials) infringes a third party's intellectual property rights, provided Client promptly notifies Prestige Group in writing and allows Prestige Group to control the defense or resolution of such claim.</p>
+
+        <h2>10. Term and Termination</h2>
+        <h3>10.1 Term</h3>
+        <p>These Terms remain in effect for as long as Client uses the Site or receives Services from Prestige Group.</p>
+
+        <h3>10.2 Termination for Convenience</h3>
+        <p>Either party may terminate an SOW with 30 days' written notice. Client shall pay for all Services performed and expenses incurred through the termination date.</p>
+
+        <h3>10.3 Termination for Cause</h3>
+        <p>Either party may terminate immediately upon written notice if the other party: (a) material breaches these Terms or any SOW and fails to cure within 15 days of receiving notice of such breach; (b) becomes insolvent or enters bankruptcy proceedings; or (c) ceases to conduct business in the ordinary course.</p>
+
+        <h3>10.4 Effects of Termination</h3>
+        <p>Upon termination, Client shall pay all outstanding fees. Sections 5 (Intellectual Property), 6 (Confidentiality), 7 (Warranties and Disclaimers), 8 (Limitation of Liability), and 9 (Indemnification) shall survive termination.</p>
+
+        <h2>11. Dispute Resolution</h2>
+        <h3>11.1 Governing Law</h3>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of laws principles.</p>
+
+        <h3>11.2 Arbitration</h3>
+        <p>Any dispute, claim, or controversy arising out of or relating to these Terms or any SOW, including the breach, termination, or validity thereof, shall be resolved by binding arbitration administered by the American Arbitration Association (AAA) in accordance with its Commercial Arbitration Rules. The arbitration shall be held in Austin, Texas, and shall be conducted by a single arbitrator. The arbitrator's decision shall be final and binding, and judgment upon the award may be entered in any court of competent jurisdiction.</p>
+
+        <h3>11.3 Litigation</h3>
+        <p>Notwithstanding the arbitration provision above, either party may seek injunctive or equitable relief in the state or federal courts located in Austin, Texas, for matters involving intellectual property infringement, breach of confidentiality, or other circumstances where monetary damages would be inadequate.</p>
+
+        <h3>11.4 Waiver of Class Actions</h3>
+        <p>Both parties agree that any arbitration shall be conducted on an individual basis only, and not as a class action, collective action, or representative action. You waive any right to participate in a class action against Prestige Group.</p>
+
+        <h2>12. General Provisions</h2>
+        <h3>12.1 Entire Agreement</h3>
+        <p>These Terms, together with any applicable SOW, constitute the entire agreement between the parties regarding the subject matter hereof and supersede all prior or contemporaneous agreements, understandings, or representations.</p>
+
+        <h3>12.2 Amendments</h3>
+        <p>We reserve the right to modify these Terms at any time. Material changes will be communicated via email or notice posted on our Site. Continued use of our Services after such changes constitutes acceptance.</p>
+
+        <h3>12.3 Severability</h3>
+        <p>If any provision of these Terms is held to be invalid or unenforceable, such provision shall be modified to the minimum extent necessary to make it valid and enforceable, and the remaining provisions shall continue in full force and effect.</p>
+
+        <h3>12.4 Waiver</h3>
+        <p>The failure of either party to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision.</p>
+
+        <h3>12.5 Assignment</h3>
+        <p>Client may not assign or transfer these Terms or any rights hereunder without Prestige Group's prior written consent. Prestige Group may assign these Terms to an affiliate or successor in connection with a merger, acquisition, or sale of assets.</p>
+
+        <h3>12.6 Force Majeure</h3>
+        <p>Neither party shall be liable for any failure or delay in performance caused by circumstances beyond its reasonable control, including acts of God, natural disasters, war, terrorism, pandemics, government actions, internet disruptions, or power failures.</p>
+
+        <h2>13. Contact Us</h2>
+        <p>For questions regarding these Terms of Service, please contact us:</p>
+        <ul>
+          <li><strong>Prestige Group, LLC</strong></li>
+          <li>1200 Innovation Drive, Suite 400, Austin, TX 78701</li>
+          <li>Email: <a href="mailto:hello@prestigegroup.com">hello@prestigegroup.com</a></li>
+          <li>Phone: <a href="tel:+15559876543">(555) 987-6543</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="legal-footer">
+    <div class="container">
+      <div class="legal-footer-inner">
+        <span>&copy; 2025 Prestige Group. All rights reserved.</span>
+        <div class="legal-footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html" class="active">Terms of Service</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
