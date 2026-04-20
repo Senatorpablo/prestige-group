@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 540" width="450" height="540">
+  <rect width="450" height="540" fill="transparent"/>
+  <text x="225" y="140" font-family="Impact, Arial Black, sans-serif" font-size="96" fill="#0F1629" text-anchor="middle" letter-spacing="-2" transform="rotate(-3 225 140)">EAST</text>
+  <text x="225" y="260" font-family="Impact, Arial Black, sans-serif" font-size="96" fill="#0F1629" text-anchor="middle" letter-spacing="-2" transform="rotate(2 225 260)">LONDON</text>
+  <text x="225" y="360" font-family="Courier New, monospace" font-size="16" fill="#2563EB" text-anchor="middle" letter-spacing="2">HACKNEY • TOWER HAMLETS • NEWHAM</text>
+  <line x1="50" y1="400" x2="400" y2="400" stroke="#D4A853" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="225" y="460" font-family="Courier New, monospace" font-size="24" fill="#4B5563" text-anchor="middle">🎨 E1 E2 E3 E5 E8 E9 E15</text>
+</svg>

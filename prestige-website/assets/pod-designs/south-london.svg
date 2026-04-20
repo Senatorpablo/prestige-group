@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 540" width="450" height="540">
+  <rect width="450" height="540" fill="transparent"/>
+  <text x="225" y="80" font-family="Impact, Arial Black, sans-serif" font-size="28" fill="#D4A853" text-anchor="middle" letter-spacing="8">REPPIN</text>
+  <text x="225" y="200" font-family="Impact, Arial Black, sans-serif" font-size="90" fill="#0F1629" text-anchor="middle" letter-spacing="4">SOUTH</text>
+  <text x="225" y="320" font-family="Impact, Arial Black, sans-serif" font-size="90" fill="#0F1629" text-anchor="middle" letter-spacing="4">LONDON</text>
+  <line x1="80" y1="360" x2="370" y2="360" stroke="#2563EB" stroke-width="4"/>
+  <text x="225" y="410" font-family="Arial, sans-serif" font-size="18" fill="#4B5563" text-anchor="middle" letter-spacing="6">SE • SW • BR • CR</text>
+  <text x="225" y="500" font-family="Arial, sans-serif" font-size="14" fill="#999" text-anchor="middle" letter-spacing="3">EST. 2026</text>
+</svg>

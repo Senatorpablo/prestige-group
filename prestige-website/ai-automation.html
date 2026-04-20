@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prestige Group AI Automation — Automate your customer service, marketing, and operations with AI. Chatbots, review management, email marketing & social media automation for London businesses.">
+  <meta name="keywords" content="AI automation, chatbot, review management, email marketing, social media automation, London, Prestige Group">
+  <meta property="og:title" content="Prestige Group — AI Automation Services">
+  <meta property="og:description" content="Automate your business with AI. Chatbots, review replies, email sequences & social media — all on autopilot.">
+  <meta property="og:type" content="website">
+  <title>Prestige Group — AI Automation Services | Automate Your Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0F1629;
+      --blue: #2563EB;
+      --blue-light: #3B82F6;
+      --gold: #D4A853;
+      --white: #FFFFFF;
+      --gray-50: #F9FAFB;
+      --gray-100: #F3F4F6;
+      --gray-200: #E5E7EB;
+      --gray-600: #4B5563;
+      --gray-700: #374151;
+      --gray-800: #1F2937;
+      --gray-900: #111827;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--gray-800); background: var(--white); line-height: 1.6; }
+    
+    /* Navigation */
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(15,22,41,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-size: 1.5rem; font-weight: 800; color: var(--white); text-decoration: none; }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta { background: var(--blue); color: white !important; padding: 0.5rem 1.25rem; border-radius: 8px; font-weight: 600; }
+    .nav-cta:hover { background: var(--blue-light); }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, var(--navy) 0%, #1a2744 50%, var(--navy) 100%); padding: 6rem 2rem; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 50%); animation: pulse 8s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37,99,235,0.15); border: 1px solid rgba(37,99,235,0.3); border-radius: 100px; padding: 0.5rem 1.25rem; font-size: 0.85rem; color: var(--blue-light); margin-bottom: 2rem; font-weight: 500; position: relative; z-index: 1; }
+    .hero h1 { font-size: 3.5rem; font-weight: 800; color: var(--white); line-height: 1.1; margin-bottom: 1.5rem; position: relative; z-index: 1; }
+    .hero h1 span { background: linear-gradient(135deg, var(--blue-light), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero p { font-size: 1.25rem; color: rgba(255,255,255,0.7); max-width: 700px; margin: 0 auto 2.5rem; position: relative; z-index: 1; }
+    .hero-buttons { display: flex; gap: 1rem; justify-content: center; position: relative; z-index: 1; flex-wrap: wrap; }
+    .btn-primary { background: var(--blue); color: white; padding: 1rem 2.5rem; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: all 0.2s; border: none; cursor: pointer; }
+    .btn-primary:hover { background: var(--blue-light); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(37,99,235,0.3); }
+    .btn-secondary { background: transparent; color: white; padding: 1rem 2.5rem; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1.1rem; border: 2px solid rgba(255,255,255,0.3); transition: all 0.2s; cursor: pointer; }
+    .btn-secondary:hover { border-color: var(--white); background: rgba(255,255,255,0.05); }
+    .hero-stats { display: flex; justify-content: center; gap: 3rem; margin-top: 4rem; position: relative; z-index: 1; flex-wrap: wrap; }
+    .hero-stat { text-align: center; }
+    .hero-stat-number { font-size: 2.5rem; font-weight: 800; color: var(--gold); }
+    .hero-stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 0.25rem; }
+
+    /* Pain Points */
+    .pain { padding: 5rem 2rem; background: var(--gray-50); }
+    .pain-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label { font-size: 0.85rem; font-weight: 700; color: var(--blue); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.75rem; }
+    .section-title { font-size: 2.5rem; font-weight: 800; color: var(--gray-900); margin-bottom: 1rem; line-height: 1.2; }
+    .section-subtitle { font-size: 1.15rem; color: var(--gray-600); max-width: 700px; margin-bottom: 3rem; }
+    .pain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .pain-card { background: white; border-radius: 16px; padding: 2rem; border: 1px solid var(--gray-200); transition: all 0.3s; }
+    .pain-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+    .pain-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .pain-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--gray-900); }
+    .pain-card p { color: var(--gray-600); font-size: 0.95rem; }
+
+    /* Services */
+    .services { padding: 5rem 2rem; }
+    .services-inner { max-width: 1100px; margin: 0 auto; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+    .service-card { background: var(--navy); border-radius: 20px; padding: 2.5rem; color: white; position: relative; overflow: hidden; transition: all 0.3s; }
+    .service-card:hover { transform: translateY(-4px); }
+    .service-card::after { content: ''; position: absolute; top: 0; right: 0; width: 150px; height: 150px; background: radial-gradient(circle, rgba(37,99,235,0.15), transparent); border-radius: 50%; }
+    .service-icon { font-size: 3rem; margin-bottom: 1.5rem; }
+    .service-card h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; position: relative; z-index: 1; }
+    .service-card p { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; font-size: 0.95rem; position: relative; z-index: 1; }
+    .service-price { display: inline-flex; align-items: baseline; gap: 0.25rem; background: rgba(212,168,83,0.15); border: 1px solid rgba(212,168,83,0.3); border-radius: 8px; padding: 0.5rem 1rem; position: relative; z-index: 1; }
+    .service-price-amount { font-size: 1.75rem; font-weight: 800; color: var(--gold); }
+    .service-price-period { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+    .service-features { list-style: none; margin-top: 1.25rem; position: relative; z-index: 1; }
+    .service-features li { padding: 0.4rem 0; color: rgba(255,255,255,0.8); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+    .service-features li::before { content: '✓'; color: var(--gold); font-weight: 700; }
+
+    /* How It Works */
+    .how { padding: 5rem 2rem; background: var(--gray-50); }
+    .how-inner { max-width: 1100px; margin: 0 auto; }
+    .how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+    .how-step { text-align: center; padding: 2rem; }
+    .how-number { width: 60px; height: 60px; background: var(--blue); color: white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem; }
+    .how-step h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--gray-900); }
+    .how-step p { color: var(--gray-600); font-size: 0.95rem; }
+
+    /* ROI Section */
+    .roi { padding: 5rem 2rem; background: linear-gradient(135deg, var(--navy), #1a2744); color: white; }
+    .roi-inner { max-width: 1100px; margin: 0 auto; }
+    .roi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-top: 3rem; }
+    .roi-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 2rem; text-align: center; }
+    .roi-number { font-size: 3rem; font-weight: 800; color: var(--gold); }
+    .roi-label { color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-top: 0.5rem; }
+
+    /* FAQ */
+    .faq { padding: 5rem 2rem; }
+    .faq-inner { max-width: 800px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--gray-200); padding: 1.5rem 0; }
+    .faq-question { font-size: 1.1rem; font-weight: 700; color: var(--gray-900); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-question::after { content: '+'; font-size: 1.5rem; color: var(--blue); font-weight: 700; }
+    .faq-answer { color: var(--gray-600); margin-top: 0.75rem; font-size: 0.95rem; line-height: 1.7; }
+
+    /* CTA */
+    .cta { padding: 5rem 2rem; background: linear-gradient(135deg, var(--blue), #1d4ed8); text-align: center; color: white; }
+    .cta h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
+    .cta p { font-size: 1.15rem; opacity: 0.9; max-width: 600px; margin: 0 auto 2rem; }
+    .cta .btn-primary { background: white; color: var(--blue); }
+    .cta .btn-primary:hover { background: var(--gray-100); transform: translateY(-2px); }
+
+    /* Footer */
+    .footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 3rem 2rem; text-align: center; font-size: 0.85rem; }
+    .footer a { color: var(--gold); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.25rem; }
+      .section-title { font-size: 1.75rem; }
+      .hero-stats { gap: 1.5rem; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Prestige<span>Group</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta" class="nav-cta">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">🤖 AI-Powered Business Automation</div>
+    <h1>Stop Losing Customers.<br><span>Automate Everything.</span></h1>
+    <p>We set up AI chatbots, automated review replies, email marketing sequences & social media scheduling — so your London business runs on autopilot while you sleep.</p>
+    <div class="hero-buttons">
+      <a href="#cta" class="btn-primary">Book Free AI Audit →</a>
+      <a href="#services" class="btn-secondary">See Packages</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-number">73%</div>
+        <div class="hero-stat-label">of customers expect<br>instant replies</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">5x</div>
+        <div class="hero-stat-label">more leads with<br>automated follow-up</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">£847</div>
+        <div class="hero-stat-label">avg monthly savings<br>per business</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pain Points -->
+  <section class="pain">
+    <div class="pain-inner">
+      <div class="section-label">The Problem</div>
+      <h2 class="section-title">You're Losing Money Every Day You Wait</h2>
+      <p class="section-subtitle">London businesses that don't automate are falling behind. Here's what's costing you right now:</p>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">💬</div>
+          <h3>Lost Enquiries at Night</h3>
+          <p>Customers message you after hours. By morning, they've already booked with your competitor who replied instantly.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">⭐</div>
+          <h3>Bad Reviews Piling Up</h3>
+          <p>Unanswered negative reviews on Google and Trustpilot scare away new customers. You need to respond within hours — not days.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">📧</div>
+          <h3>Follow-Up Failures</h3>
+          <p>80% of sales need 5+ follow-ups. But you're busy running the business, so leads go cold and money walks out the door.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">📱</div>
+          <h3>Social Media Neglect</h3>
+          <p>Inconsistent posting kills your reach. You know you should post daily, but who has the time?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services/Packages -->
+  <section class="services" id="services">
+    <div class="services-inner">
+      <div class="section-label">Our Packages</div>
+      <h2 class="section-title">AI Automation That Pays for Itself</h2>
+      <p class="section-subtitle">Choose the level of automation that fits your business. Every package includes setup, training & ongoing support.</p>
+      <div class="services-grid">
+
+        <!-- Starter -->
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>Starter</h3>
+          <p>AI Chatbot that answers customer questions 24/7 on your website & WhatsApp. Never miss an enquiry again.</p>
+          <div class="service-price">
+            <span class="service-price-amount">£297</span>
+            <span class="service-price-period">/one-time setup + £49/mo</span>
+          </div>
+          <ul class="service-features">
+            <li>Website chatbot with your business info</li>
+            <li>WhatsApp auto-reply bot</li>
+            <li>FAQ database (50+ questions)</li>
+            <li>Lead capture & email notifications</li>
+            <li>Monthly performance report</li>
+          </ul>
+        </div>
+
+        <!-- Growth -->
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Growth</h3>
+          <p>Full automation suite — chatbot, review management & email follow-ups. The works for growing businesses.</p>
+          <div class="service-price">
+            <span class="service-price-amount">£497</span>
+            <span class="service-price-period">/one-time setup + £99/mo</span>
+          </div>
+          <ul class="service-features">
+            <li>Everything in Starter</li>
+            <li>Google & Trustpilot review auto-replies</li>
+            <li>5-step email nurture sequence</li>
+            <li>Automated appointment reminders</li>
+            <li>SMS follow-up system</li>
+            <li>Bi-weekly performance report</li>
+          </ul>
+        </div>
+
+        <!-- Scale -->
+        <div class="service-card">
+          <div class="service-icon">🚀</div>
+          <h3>Scale</h3>
+          <p>Total automation domination. Chatbot, reviews, email, SMS & social media — your business runs itself.</p>
+          <div class="service-price">
+            <span class="service-price-amount">£797</span>
+            <span class="service-price-period">/one-time setup + £199/mo</span>
+          </div>
+          <ul class="service-features">
+            <li>Everything in Growth</li>
+            <li>Social media auto-scheduling (5 platforms)</li>
+            <li>AI-generated social content</li>
+            <li>Advanced email sequences (10+ emails)</li>
+            <li>Customer re-engagement campaigns</li>
+            <li>Dedicated account manager</li>
+            <li>Weekly strategy call</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how" id="how">
+    <div class="how-inner">
+      <div class="section-label" style="text-align:center;">How It Works</div>
+      <h2 class="section-title" style="text-align:center;">Live in 7 Days. Zero Tech Headaches.</h2>
+      <p class="section-subtitle" style="text-align:center;margin-left:auto;margin-right:auto;">We handle everything. You just approve and watch the results roll in.</p>
+      <div class="how-steps">
+        <div class="how-step">
+          <div class="how-number">1</div>
+          <h3>Free AI Audit</h3>
+          <p>We analyse your business, identify where you're losing money, and show you exactly which automations will make the biggest impact.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-number">2</div>
+          <h3>We Build Everything</h3>
+          <p>Our team sets up your chatbot, email sequences, review management & social scheduling — tailored specifically to your business.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-number">3</div>
+          <h3>You Approve & Launch</h3>
+          <p>Review everything, hit approve, and your business is automated. We monitor, optimise & send you reports. It just works.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI -->
+  <section class="roi">
+    <div class="roi-inner">
+      <div class="section-label" style="color:var(--gold);">The Numbers</div>
+      <h2 class="section-title" style="color:white;">What Automation Actually Does for Your Business</h2>
+      <div class="roi-grid">
+        <div class="roi-card">
+          <div class="roi-number">98%</div>
+          <div class="roi-label">of enquiries answered within 30 seconds</div>
+        </div>
+        <div class="roi-card">
+          <div class="roi-number">340%</div>
+          <div class="roi-label">increase in lead conversion with follow-up</div>
+        </div>
+        <div class="roi-card">
+          <div class="roi-number">40%</div>
+          <div class="roi-label">reduction in negative review impact</div>
+        </div>
+        <div class="roi-card">
+          <div class="roi-number">12hrs</div>
+          <div class="roi-label">saved per week on admin tasks</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="faq-inner">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common Questions</h2>
+      <div class="faq-item">
+        <div class="faq-question">Will the chatbot sound robotic?</div>
+        <div class="faq-answer">No. We programme your chatbot with your business's tone of voice, FAQs, and services. It sounds like your best team member — available 24/7. If it can't answer something, it seamlessly hands off to a human.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Do I need any technical skills?</div>
+        <div class="faq-answer">Zero. We handle all the setup, integrations & training. You just approve the content and we go live. We also provide a simple dashboard to monitor everything.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How quickly can I see results?</div>
+        <div class="faq-answer">Most clients see their first automated customer interaction within 24 hours of launch. ROI is typically positive within the first month — one saved customer or won review more than covers the cost.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What if I already have a chatbot?</div>
+        <div class="faq-answer">We'll audit your current setup for free. Most DIY chatbots are underperforming — we'll show you exactly where you're losing money and how our setup would improve things.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Can I cancel anytime?</div>
+        <div class="faq-answer">Yes. Monthly management can be cancelled with 30 days notice. The automation we set up (chatbot, email sequences) remains yours to keep — it just won't be actively managed by us anymore.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <h2>Ready to Stop Losing Customers?</h2>
+    <p>Book your free AI audit today. We'll show you exactly where automation will make you money — no obligation, no pressure.</p>
+    <a href="mailto:hello@prestigegroup.com?subject=AI%20Automation%20Audit%20Request" class="btn-primary">Book Free AI Audit →</a>
+    <p style="margin-top:1.5rem;font-size:0.9rem;opacity:0.8;">Or call/WhatsApp: 07XXX XXXXXX | Usually responds within 1 hour</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Prestige Group. AI Automation Services for London Businesses.</p>
+    <p style="margin-top:0.5rem;"><a href="index.html">Main Site</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
