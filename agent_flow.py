@@ -11,7 +11,7 @@ Agent Roles:
     pipeline runner, handles the technical heavy lifting
 
 Communication Protocol:
-  - Agents share a shared workspace: /Users/senator/prestige-group/
+  - Agents share a shared workspace configured via PRESTIGE_GROUP_WORKSPACE
   - Task handoffs are tracked in agent_handoffs.json
   - Each agent logs activity to agent_log.json
   - Status files indicate what's ready for the other agent to pick up
@@ -31,7 +31,9 @@ import os
 import datetime
 from pathlib import Path
 
-WORKSPACE = Path("/Users/senator/prestige-group")
+# Workspace path — set PRESTIGE_GROUP_WORKSPACE in your environment or .env
+WORKSPACE = Path(os.environ.get("PRESTIGE_GROUP_WORKSPACE",
+                                str(Path.home() / "prestige-group")))
 HANDOFFS_FILE = WORKSPACE / "agent_handoffs.json"
 LOG_FILE = WORKSPACE / "agent_log.json"
 STATUS_DIR = WORKSPACE / "status"
