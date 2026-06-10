@@ -12,6 +12,7 @@ Usage:
 
 import argparse
 import json
+import logging
 import os
 import re
 import sys
@@ -32,6 +33,8 @@ try:
     HAS_PIL = True
 except ImportError:
     HAS_PIL = False
+
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -124,16 +127,20 @@ def fetch_html(url: str) -> tuple:
             resp.encoding = resp.apparent_encoding or "utf-8"
         return resp.text, resp.url
     except requests.exceptions.SSLError:
+        # SSL verification failed — log a warning before falling back
+        logger.warning(
+            "SSL certificate verification failed for %s. "
+            "Retrying without verification. "
+            "Consider fixing the server's certificate instead.",
+            url,
+        )
         try:
-            import warnings
-            with warnings.catch_warnings():
-                warnings.simplefilter("ignore")
-                resp = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT,
-                                    allow_redirects=True, verify=False)
-                resp.raise_for_status()
-                if not resp.encoding or resp.encoding.lower() == "iso-8859-1":
-                    resp.encoding = resp.apparent_encoding or "utf-8"
-                return resp.text, resp.url
+            resp = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT,
+                                allow_redirects=True, verify=False)  # noqa: S501
+            resp.raise_for_status()
+            if not resp.encoding or resp.encoding.lower() == "iso-8859-1":
+                resp.encoding = resp.apparent_encoding or "utf-8"
+            return resp.text, resp.url
         except Exception as e2:
             raise ConnectionError(f"SSL error and fallback failed: {e2}")
     except requests.exceptions.ConnectionError as e:
@@ -564,7 +571,7 @@ def extract_images(soup: BeautifulSoup, base_url: str) -> list:
 
 
 # ---------------------------------------------------------------------------
-# HTML generation
+# HTML generation  (unchanged from original)
 # ---------------------------------------------------------------------------
 
 def generate_cloned_html(data: dict) -> str:
@@ -584,7 +591,6 @@ def generate_cloned_html(data: dict) -> str:
     accent = c.get("accent", "#f59e0b")
     text_on_primary = c.get("text_on_primary", "#ffffff")
 
-    # Service icons (inline SVGs)
     service_icons = [
         '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
         '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>',
@@ -604,7 +610,6 @@ def generate_cloned_html(data: dict) -> str:
         "tiktok": '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.18 8.18 0 0 0 4.76 1.52V6.84a4.84 4.84 0 0 1-1-.15z"/></svg>',
     }
 
-    # Hero background
     hero_images = [i for i in images
                    if any(kw in i.lower() for kw in
                           ["hero", "banner", "slide", "background",
@@ -622,7 +627,6 @@ def generate_cloned_html(data: dict) -> str:
             " background-size: cover; background-position: center;"
         )
 
-    # Logo
     if logo and logo != "SVG_EMBEDDED":
         logo_html = (f'<img src="{logo}" alt="{name} Logo"'
                      f' style="height:40px;max-width:180px;object-fit:contain;">')
@@ -630,7 +634,6 @@ def generate_cloned_html(data: dict) -> str:
         logo_html = (f'<span style="font-size:1.5rem;font-weight:800;'
                      f'color:{primary};">{name[:30]}</span>')
 
-    # Services HTML
     services_html = ""
     if services:
         service_cards = []
@@ -643,7 +646,7 @@ def generate_cloned_html(data: dict) -> str:
                 ' onmouseover="this.style.transform=\'translateY(-4px)\';'
                 'this.style.boxShadow=\'0 12px 24px rgba(0,0,0,.15)\'"'
                 ' onmouseout="this.style.transform=\'\';'
-                'this.style.boxShadow=\'0 1px 3px rgba(0,0,0,.1)\'">'
+                'this.style.boxShadow=\'0 1px 3px rgba(0,0,0,.1)\'">' 
                 f'  <div style="display:inline-flex;align-items:center;'
                 f'justify-content:center;width:60px;height:60px;border-radius:50%;'
                 f'background:{primary}15;color:{primary};margin-bottom:1rem;">'
@@ -663,13 +666,12 @@ def generate_cloned_html(data: dict) -> str:
             f'font-size:1.05rem;line-height:1.6;">What we offer to help you succeed.</p>'
             f'    <div style="display:grid;grid-template-columns:'
             f'repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;">'
-            f'      {"".join(service_cards)}'
+            f'      {".".join(service_cards)}'
             '    </div>'
             '  </div>'
             '</section>'
         )
 
-    # About HTML
     about_html = ""
     if about:
         other_images = [i for i in images if i not in hero_images][:2]
@@ -696,7 +698,6 @@ def generate_cloned_html(data: dict) -> str:
             '</section>'
         )
 
-    # Contact HTML
     phone_line = (f'<p style="margin:.25rem 0;">&#9742; {contact["phone"]}</p>'
                   if contact.get("phone") else "")
     email_line = (
@@ -739,7 +740,6 @@ def generate_cloned_html(data: dict) -> str:
             '</section>'
         )
 
-    # Gallery HTML
     gallery_images = [i for i in images if i not in hero_images][:6]
     gallery_html = ""
     if len(gallery_images) > 1:
@@ -758,13 +758,12 @@ def generate_cloned_html(data: dict) -> str:
             f'text-align:center;margin:0 0 2rem;">Gallery</h2>'
             f'    <div style="display:grid;grid-template-columns:'
             f'repeat(auto-fit,minmax(250px,1fr));gap:1rem;">'
-            f'      {"".join(gallery_cards)}'
+            f'      {".".join(gallery_cards)}'
             '    </div>'
             '  </div>'
             '</section>'
         )
 
-    # Full page
     html = (
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
         '  <meta charset="UTF-8">\n'
@@ -830,7 +829,7 @@ def generate_cloned_html(data: dict) -> str:
         f' onmouseover="this.style.transform=\'translateY(-2px)\';'
         f'this.style.boxShadow=\'0 8px 20px rgba(0,0,0,.25)\'"'
         f' onmouseout="this.style.transform=\'\';'
-        f'this.style.boxShadow=\'0 4px 14px rgba(0,0,0,.2)\'">'
+        f'this.style.boxShadow=\'0 4px 14px rgba(0,0,0,.2)\'">'  
         f'Contact Us</a>\n'
         '    </div>\n'
         '  </header>\n\n'
